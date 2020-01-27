@@ -3,42 +3,52 @@
 <head>
 	<meta charset="utf-8">
 	<title>Google</title>
+
+	<!-- Stylesheet  -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!--  Font Awesome  -->
+	<script src="https://kit.fontawesome.com/117c4b5d74.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	
-	<div id="headerLeft">
-		<a href="">About</a>
-		<a href="">Store</a>
-	</div>
-	<div id="headerRight">
-		<a href="">Gmail</a>
-		<a href="">Images</a>
-		<a href="">Icon</a>
-		<a href="">Initial</a>
-	</div>
 
+	<!--  NAV BAR  -->
+	<nav>
+		<ul>
+			<span id="left-nav"><li><a href="#">About</a></li>
+			<li><a href="#">Store</a></li></span>
+			<span id="right-nav"><li><a href="#">Gmail</a></li>
+			<li><a href="#">Images</a></li>
+			<li><a href="#"><i class="fas fa-th fa-lg"></i></a></li>
+			<li><a href="#"><button id="nav-button" type="button">Sign In</button></a></li></span>
+		</ul>
+	</nav>
+
+	<!--  Google Logo  -->
 	<img id="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
 
-	<form>
-		<input type="text" name="searchbar">
-		<br>
-		<input type="submit" name="Search">
-		<input type="submit" name="I feel lucky">
-	</form>
-
-	<div id="footer">
-		<div id="footerLeft">
-			<a href="">Advertising</a>
-			<a href="">Business</a>
-			<a href="">How Search works</a>
-		</div>
-		<div id="footerRight">
-			<a href="">Privacy</a>
-			<a href="">Terms</a>
-			<a href="">Settings</a>
-		</div>
+	<!-- Search Bar  -->
+	<div id="form-wrapper">
+		<form>
+			<input id="search" type="text" name="searchbar">
+			<div id="form-buttons">
+				<input class="search-button" type="submit" value="Google Search">
+				<input class="search-button" type="submit" value="I'm Feeling Lucky">
+			</div>	
+		</form>
 	</div>
+
+	<!--  Footer  -->
+	<footer id="bottom-footer">
+		<ul>
+			<span id="left-footer"><li><a href="#">Advertising</a></li>
+			<li><a href="#">Business</a></li>
+			<li><a href="#">How Search works</a></li></span>
+			<span id="right-footer"><li><a href="#">Privacy</a></li>
+			<li><a href="#">Terms</a></li>
+			<li><a href="#">Settings</a></li></span>
+		</ul>
+	</footer>
 
 </body>
 </html>
